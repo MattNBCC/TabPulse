@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TabPulse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Auto Refresh</h2>
+    <label for="interval">Interval:</label>
+    <select id="interval">
+      <option value="60000">1 min</option>
+      <option value="300000" selected>5 min</option>
+      <option value="600000">10 min</option>
+      <option value="900000">15 min</option>
+    </select>
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <p id="status"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>

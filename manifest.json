@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "TabPulse: Auto Refresh",
+  "version": "1.0",
+  "description": "Refresh any tab automatically at a selected interval.",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "TabPulse",
+    "default_icon": {
+      "48": "icons/icon.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tabpulse@sqservers.com"
+    }
+  },
+  "web_accessible_resources": ["icons/icon.png"]
+}
